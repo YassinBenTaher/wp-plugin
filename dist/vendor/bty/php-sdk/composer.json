@@ -1,0 +1,36 @@
+{
+    "name": "bty/php-sdk",
+    "description": "Composer php sdk",
+    "type": "library",
+    "authors": [
+        {
+            "name": "bty",
+            "email": "ybentaher@tryspare.com"
+        }
+    ],
+    "license": "MIT",
+    "minimum-stability": "dev",
+    "require": {
+        "php": "^8.0.7",
+        "php-http/curl-client": "^2.0@dev",
+        "react/promise": "^2.8",
+        "mashape/unirest-php": "dev-master",
+        "guzzlehttp/guzzle": "^7.4@dev",
+        "jms/serializer": "^3.12@dev",
+        "composer/installers": "~1.0",
+        "spatie/async": "dev-master",
+        "symfony/serializer": "6.0.x-dev",
+        "symfony/property-access": "6.0.x-dev"
+    },
+    "config": {
+        "preferred-install": "dist",
+        "platform": {
+            "php": "8.0.7"
+        }
+    },
+    "autoload": {
+        "psr-0": {
+            "Payment": "src/"
+        }
+    }
+}

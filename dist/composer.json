@@ -1,0 +1,9 @@
+{
+    "minimum-stability": "dev",
+    "require": {
+      "bty/php-sdk": "dev-main"
+    },
+    "config": {
+      "platform-check": false
+    }
+  }
