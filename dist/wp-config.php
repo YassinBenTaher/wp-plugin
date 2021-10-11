@@ -18,16 +18,6 @@
  * @package WordPress
  */
 
-$cleardb_url = parse_url(getenv("mysql://ba9d6a2f9a0892:e3d65ca0@eu-cdbr-west-01.cleardb.com/heroku_5bd696e6eaef814?reconnect=true"));
-$cleardb_server = $cleardb_url["eu-cdbr-west-01.cleardb.com"];
-$cleardb_username = $cleardb_url["ba9d6a2f9a0892:e3d65ca0"];
-$cleardb_password = $cleardb_url["e3d65ca0"];
-$cleardb_db = substr($cleardb_url["heroku_5bd696e6eaef814"],1);
-$active_group = 'default';
-$query_builder = TRUE;
-// Connect to DB
-$conn = mysqli_connect($cleardb_server, $cleardb_username, $cleardb_password, $cleardb_db);
-
 // ** MySQL settings - You can get this info from your web host ** //
 /** The name of the database for WordPress */
 define( 'DB_NAME', 'heroku_5bd696e6eaef814');
